@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 num2 = parseFloat(currentValue);
                 result = operate(parseFloat(num1), parseFloat(num2), operator);
                 displayText.textContent = result;
-                num1 = result; 
+                num1 = result;
                 num2 = null;
                 currentValue = '';
                 operator = button.textContent;
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
             num2 = parseFloat(currentValue);
             result = operate(parseFloat(num1), parseFloat(num2), operator);
             displayText.textContent = result;
-            num1 = result; // Store result as num1 for potential next operation
+            num1 = result;
             num2 = null;
             operator = null;
             currentValue = '';
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
             if (button.textContent === '.') {
-                decimalEntered = true; 
+                decimalEntered = true;
             }
             updateDisplay(button.textContent);
         });
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // DARKENS EACH BUTTON WHEN PRESSED
     allButtons.forEach(button => {
         button.addEventListener('click', function () {
-            darkenButton(button); // Darken the button
+            darkenButton(button);
         });
     });
 
