@@ -37,6 +37,11 @@ button {
     font-size: 20px;
     border-radius: 40px;
     font-family: inherit;
+    transition: background-color 0.3s ease;
+}
+
+button.clicked {
+    filter: brightness(50%); /* Darken the button when clicked */
 }
 
 .zero-button {
@@ -56,8 +61,14 @@ button {
     background-color: #44b0ba61
 }
 
-h2 {
+.display-text {
     text-align: right;
     font-size: 50px;
     margin-right: 5px;
 }
+
+h1 {
+    font-size: 55px;
+}
+
+

@@ -12,13 +12,11 @@
 <body>
     <h1>Calculator</h1>
     <div class="calculator-container">
-        <div class="display">
-            <h2>123456789</h2>
-        </div>
+        <div class="display" id="display"></div>
         <div class="buttons">
-        <button class="option-button">AC</button>
-        <button class="option-button">+/-</button>
-        <button class="option-button">%</button>
+        <button class="option-button" id="clear-button">AC</button>
+        <button class="option-button" id="negative-button">+/-</button>
+        <button class="option-button" id="percent-button">%</button>
         <button class="operator-button">/</button>
 
         <button class="number-button">7</button>
@@ -36,9 +34,9 @@
         <button class="number-button">3</button>
         <button class="operator-button">+</button>
 
-        <button class="zero-button">0</button>
+        <button class="number-button zero-button">0</button>
         <button class="number-button">.</button>
-        <button class="equal-button">=</button>
+        <button class="equal-button" id="equal-button">=</button>
     </div>
     </div>
 </body>
